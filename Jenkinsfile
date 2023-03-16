@@ -10,9 +10,9 @@ pipeline{
 			    }
 		    }
 	    }
-        stage('Build'){
-            steps{
-		    script{
+            stage('Build'){
+		    steps{
+		    	script{
 			    build()
 		    }
             }
@@ -28,6 +28,14 @@ pipeline{
             steps{
 		    script{
 			    deploy()
+		    }
+            }
+
+        }
+        stage('Say thanks message'){
+            steps{
+		    script{
+			    saythanks()
 		    }
             }
 
