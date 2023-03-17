@@ -24,17 +24,17 @@ pipeline{
 			    }
 		    }
 	    }
-        stage('Deploy'){
-            steps{
-		    script{
+            stage('Deploy'){
+                   steps{
+		       script{
 			    deploy()
 		    }
             }
 
         }
-        stage('Say thanks message'){
-            steps{
-		    script{
+           stage('Say thanks message'){
+                  steps{
+		       script{
 			    saythanks()
 		    }
             }
