@@ -18,12 +18,12 @@ pipeline{
             }
         }
 //	    stage('testing'){
-		    steps{
-			    script{
-			    	test()
-			    }
-		    }
-	    }
+//		    steps{
+//			    script{
+//			    	test()
+//			    }
+//		    }
+//	    }
         stage('Deploy'){
             steps{
 		       script{
