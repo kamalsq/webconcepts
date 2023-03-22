@@ -10,34 +10,34 @@ pipeline{
 			    }
 		    }
 	    }
-            stage('Build'){
+        stage('Build'){
 		    steps{
 		    	script{
-			    build()
+			    	build()
 		    }
             }
         }
-	     stage('testing'){
+	    stage('testing'){
 		    steps{
 			    script{
 			    	test()
 			    }
 		    }
 	    }
-            stage('Deploy'){
-                   steps{
+        stage('Deploy'){
+            steps{
 		       script{
-			    deploy()
+			    	deploy()
 		    }
             }
 
         }
-           stage('Say thanks message'){
-                  steps{
+        stage('Say thanks message'){
+            steps{
 		       script{
-			    saythanks()
-		    }
-            }
+			    	saythanks()
+		   	 }
+        }
 
         }
     }
