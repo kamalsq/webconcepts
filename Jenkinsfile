@@ -17,13 +17,7 @@ pipeline{
 		    }
             }
         }
-//	    stage('testing'){
-//		    steps{
-//			    script{
-//			    	test()
-//			    }
-//		    }
-//	    }
+
         stage('Deploy'){
             steps{
 		       script{
